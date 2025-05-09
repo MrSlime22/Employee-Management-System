@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header"> 
+      <a href="index.html" class="logo">EM<span>S</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="decide.html">DECIDE Framework</a>
+        <a href="result.html">Evaluation Results</a>
+        <a href="improvement.html">Proposed Improvement</a>
+          <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">More ▼</button>
+        <div class="dropdown-content" id="myDropdown">
+<button class="logout-button" onclick="exitApp()"><i class='bx bx-log-out'></i> Logout</button>
+        </div>
+    </div>
+      </nav>
+      
+    </header>
+
+    </section>
+<div class="image-container">
+    <img src="img.jpg" alt="Alt text" />
+    <div class="overlay">Decide Framework</div>
+</div>
+    <section class="Framework" id="Framework">
+   <h3>D - Determine the goals</h3>
+    <br>
+    <p>• Assess the effectiveness and efficiency of the Employee Management System.</p><br>
+    <p>• Evaluate user satisfaction and overall usability</p><br>
+    <p>• Measure the system’s impact on organizational productivity.</p>
+ <br>
+ <br>
+ <h3>E - Explore the questions<br></h3>
+ <br>
+ <p>• How well does the system meet user needs for managing employee records?</p><br>
+  <p>• Are the functionalities (CRUD, search, export) intuitive and accessible?</p><br>
+   <p>• What are the common issues or challenges faced by users?</p><br>
+   <p>• How does the system perform in terms of speed and reliability?</p>
+   <br>
+   <br>
+  <h3>C - Choose the evaluation approach and methods</h3><br>
+  <p>In our evaluation approach, we will conduct a collaborative assessment of our system. Each group member will take turns using the prototype, providing feedback on its usability and functionality.</p><br>
+
+<p>We will hold a structured discussion after each member has interacted with the application. During this discussion, we will share observations, insights, and suggestions for improvement based on our experiences with the prototype.</p><br>
+
+<p>This hands-on evaluation will help us collectively assess the strengths and weaknesses of our system, allowing us to make informed adjustments for future iterations.</p>
+<br>
+<br>
+<h3>I - Identify the practical issues</h3>
+<br>
+ <p>• We ensure adequate time for conducting thorough evaluations.</p><br>
+  <p>• Encourage participation from users to gather diverse feedback.</p>
+  <br>
+  <p>• Address any concerns about privacy during the evaluation process.</p>
+  <br>
+  <p>Participants</p><br>
+  <table border="1">
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Year/Course/Section</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Rolando Elardo Jr</td>
+    <td>22</td>
+    <td>Male</td>
+    <td>BSIT3B</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Nathaniel Peña</td>
+    <td>21</td>
+    <td>Male</td>
+    <td>BSIT3B</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Reisen Balcueva</td>
+    <td>22</td>
+    <td>Male</td>
+    <td>BSIT3B</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Ralph  Jude Narvato</td>
+    <td>21</td>
+    <td>Male</td>
+    <td>BSIT3B</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Ivan Duran</td>
+    <td>22</td>
+    <td>Male</td>
+    <td>BSIT3B</td>
+  </tr>
+</table>
+<br>
+<br>
+ <h3>D - Decide to the ethical issues</h3><br>
+ <p>• Ensure that user data and feedback remain confidential.</p><br>
+ <p>• Obtain consent from users before collecting feedback or conducting testing.</p><br>
+<p>• Clearly communicate the purpose of the evaluation and how the data will be used.</p>
+<br>
+<br>
+ <h3>E - Evaluation, Analyze, Interpret and Present the data</h3><br>
+<p>In this evaluation, we use the Nielsen Norman Group Heuristic Evaluation Workbook to identify usability issues within the Employee Management System. By applying Jakob Nielsen’s 10 Usability Heuristics, we assess how well the interface meets user needs and where improvements can be made. Below, we outline the key issues found during the evaluation, along with recommendations for enhancing the overall user experience.</p><br>
+
+<b>1. Visibility of System Status</b>
+<p>Issues: The system doesn’t clearly show what’s happening after user actions. For example, when a user adds or deletes an entry, there’s no feedback to indicate if the action was successful or still in progress.</p>
+
+<p>Recommendations: To fix this, we should add loading indicators and feedback messages. This way, users will know that their action is being processed, which helps them feel more in control.</p><br>
+
+<b>2. Match Between System and the Real World</b>
+<p>Issues: Some of the terms used in the system are confusing and not very user-friendly. Users might not understand the jargon or technical terms.</p>
+
+<p>Recommendations: We should use everyday language and follow familiar conventions for controls and buttons. This will make the system more relatable and easier to navigate for users.</p><br>
+
+<b>3. User Control and Freedom</b>
+<p>Issues: There’s no easy way to go back if a mistake is made. For instance, if a user accidentally deletes something, they have no option to undo that action.</p>
+
+<p>Recommendations: Introducing an undo/redo option and clear cancel buttons would be really helpful. This gives users the freedom to correct their mistakes without stress.</p><br>
+
+<b>4. Consistency and Standards</b>
+<p>Issues: Similar buttons look alike, which can cause confusion. Users might not be sure about what each button does.</p>
+
+<p>Recommendations: We should ensure that all buttons have a consistent look and clear labels. This helps users understand their functions at a glance.</p><br>
+
+<b>5. Error Prevention</b>
+<p>Issues: Users can easily make mistakes, especially since there are no prompts to confirm important actions. This could lead to accidental deletions or changes.</p>
+
+<p>Recommendations: Adding checks to prevent errors and implementing confirmation dialogs for important actions would be beneficial. This way, users can think twice before committing to potentially harmful actions.</p><br>
+
+<b>6. Recognition Rather Than Recall</b>
+<p>Issues: Important information isn’t always visible, which forces users to remember details from different parts of the interface.</p>
+
+<p>Recommendations: Keeping key information visible and adding tooltips for help would greatly assist users. Tooltips can provide additional context without overwhelming them.</p><br>
+
+<b>7. Flexibility and Efficiency of Use</b>
+<p>Issues: There are no options for users to customize their frequently used actions, which can slow down their workflow.</p>
+
+<p>Recommendations: Allowing users to create shortcuts or personalize their interface would enhance their efficiency. This flexibility caters to individual preferences, making the system more user-friendly.</p><br>
+
+<b>8. Aesthetic and Minimalist Design</b>
+<p>Issues: The interface is cluttered with unnecessary information, which can distract users and reduce the visibility of essential content.</p>
+
+<p>Recommendations: We should simplify the design by focusing on essential elements and removing distractions. A cleaner interface can improve overall usability.</p><br>
+
+<b>9. Help Users Recognize, Diagnose, and Recover from Errors</b>
+<p>Issues: Error messages are often hard to understand and use technical language, which can confuse users.</p>
+
+<p>Recommendations: Rewriting error messages in simple terms and providing clear solutions would empower users to resolve issues quickly. This approach makes the system more approachable.</p><br>
+
+<b>10. Help and Documentation</b>
+<p>Issues: Finding help is difficult, and there’s no contextual assistance available when users encounter problems.</p>
+
+<p>Recommendations: Improving the search feature for help and providing support right when users need it would enhance their experience. Contextual help can guide users without them having to search extensively.</p><br>
+
+<p>By addressing these usability issues, we can create a more intuitive and user-friendly Employee Management System that enhances the overall user experience. </p><br>
+ 
+    </section>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/MrSlime22" target="_blank">
+            <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.facebook.com/elardo.rolando1819" target="_blank">
+            <i class="bx bxl-facebook"></i>
+        </a>
+        <a target="">
+            <i class="bx bxl-instagram-alt"></i>
+        </a> 
+        <a target="">
+            <i class="bx bxl-twitter"></i>
+        </a>
+    </div>
+
+
+      <p class="copyright">© Employee Management System Evaluator | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header"> 
+      <a href="index.html" class="logo">EM<span>S</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="decide.html">DECIDE Framework</a>
+        <a href="result.html">Evaluation Results</a>
+        <a href="improvement.html">Proposed Improvement</a>
+          <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">More ▼</button>
+        <div class="dropdown-content" id="myDropdown">
+<button class="logout-button" onclick="exitApp()"><i class='bx bx-log-out'></i> Logout</button>
+        </div>
+    </div>
+      </nav>
+    </header>
+    </section>
+<div class="image-container">
+    <img src="img.jpg" alt="Alt text" />
+    <div class="overlay">Evaluation Result</div>
+</div>
+    <section class="projects2" id="projects2">
+<h2 class="heading">List of Usability problems found:</h2>
+
+<div class="projects-box2">
+<div class="project-card2">
+<img src="result/home.jpg" alt="">
+<h3>Heuristic Violated: Consistency and Standards</h3>
+<p>Description: Buttons have the same design but different colors, which can confuse users about their functions.</p>
+<p>Impact: Users may mistakenly assume that differently colored buttons perform different actions, leading to errors.</p>
+      </div>
+      
+<div class="project-card2">
+<img src="result/addemplo.jpg" alt="">
+<h3>Heuristic Violated: User Control and Freedom</h3>
+<p>Description: There’s no option to undo actions, such as deleting an entry.</p>
+<p>Impact: This can make users nervous about making changes since they can’t easily go back if they make a mistake.</p>
+      </div>
+
+<div class="project-card2">
+<img src="result/desig.jpg" alt="">
+<h3>Heuristic Violated: Match Between System and the Real World</h3>
+<p>Description: Some of the terms used in the system are confusing and not what users might expect.</p>
+<p>Impact: If users don’t understand the language, it makes it harder for them to use the system effectively and can slow them down.</p>
+</div>
+
+<div class="project-card2">
+<img src="result/depart.jpg" alt="">
+<h3>Heuristic Violated: Aesthetic and Minimalist Design</h3>
+<p>Description: The interface might have a lot of unnecessary information, which can be distracting.</p>
+<p>Impact: A cluttered screen can overwhelm users, making it difficult for them to focus on what they need to do.</p>
+</div>
+
+<div class="project-card2">
+<img src="result/navbar.jpg" alt="">
+<h3>Heuristic Violated: Visibility of System Status</h3>
+<p>Description: The system doesn’t clearly show what’s happening after users take an action, like adding or deleting something.</p>
+<p>Impact: This can make users unsure if their action worked, leading to confusion and frustration.</p>
+      </div>
+
+<div class="project-card2">
+<img src="result/message.jpg" alt="">
+<h3>Heuristic Violated: Help Users Recognize, Diagnose, and Recover from Errors</h3>
+<p>Description: Error messages are often unclear and use complicated language.</p>
+<p>Impact: If users can’t understand the error messages, they might struggle to fix problems, leading to frustration.</p>
+      </div>
+</section>
+    <section>
+  <h3>Heuristic Evaluation Workbook</h3>
+  <div class="grid-container2">
+  <div class="grid-item2">
+  <a href="eval/book.pdf" class="pdf-button" target="_blank">  Read </a>
+  </div>
+  </div>
+  <br>
+  <br>
+  <h3>Participants Evaluation Results</h3>
+<div class="grid-container">
+  <div class="grid-item">
+  <p>Rolando Elardo Jr</p>
+<a href="eval/elardo.pdf" class="pdf-button" target="_blank">  Read </a><br>
+<p>Reisen Balcueva</p>
+<a href="eval/Bal.pdf" class="pdf-button" target="_blank">  Read </a><br>
+<p>Nathaniel Peña</p>
+<a href="eval/Peñ.pdf" class="pdf-button" target="_blank">  Read </a><br>
+<p>Ivan Duran</p>
+<a href="eval/Dur.pdf" class="pdf-button" target="_blank">  Read  </a><br>
+<p>Ralph Jude Narvato</p>
+<a href="eval/ralph.pdf" class="pdf-button" target="_blank">  Read </a>
+</div>
+</div>
+<br>
+<br>
+<h3>List of Tasks for Evaluation</h3>
+<br>
+<b>1. Log In to the System</b>
+  <p> - Access the Employee Management System with valid credentials.</p>
+<br>
+<b>2. Add a New Designation</b>
+  <p> - Navigate to the Designation section and successfully add a new designation.</p>
+<br>
+<b>3. Edit an Existing Designation</b>
+  <p> - Select an existing designation and modify its details.</p>
+<br>
+<b>4. Delete a Designation</b>
+ <p>  - Remove a designation from the list and confirm the action.</p>
+<br>
+<b>5. Search for a Designation</b>
+  <p> - Use the search function to find a specific designation by name.</p>
+<br>
+<b>6. View All Departments</b>
+  <p> - Navigate to the Department section and review the list of all departments.</p>
+<br>
+<b>7. Add a New Department</b>
+ <p> - Successfully add a new department to the system.</p>
+<br>
+<b>8. Export Employee Data</b>
+  <p> - Use the export function to download employee data in the appropriate format.</p>
+<br>
+<b>9. View Employee Details</b>
+   <p>- Select an employee from the list to view their detailed information.</p>
+<br>
+<b>10. Navigate Between Pages</b>
+    <p>- Use pagination to navigate through multiple pages of employee or department entries.</p>
+<br>
+<br>
+<h3>Conclusion of the Evaluation</h3>
+<br>
+<p>The evaluation of the Employee Management System revealed several usability issues that hinder user experience. Key violations of usability heuristics included inconsistencies in button design, lack of feedback after actions, and insufficient error prevention measures. By addressing these issues, such as ensuring consistent design across buttons and providing clear feedback for user actions, the system can significantly enhance usability. Overall, improvements in these areas would lead to a more intuitive and user-friendly experience for employees managing designations and departments within the system.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/MrSlime22" target="_blank">
+            <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.facebook.com/elardo.rolando1819" target="_blank">
+            <i class="bx bxl-facebook"></i>
+        </a>
+        <a target="">
+            <i class="bx bxl-instagram-alt"></i>
+        </a> 
+        <a target="">
+            <i class="bx bxl-twitter"></i>
+        </a>
+    </div>
+
+      <p class="copyright">© Employee Management System Evaluator | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

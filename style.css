@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+
+.home-img img,
+.about-img img {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the value for more or less movement */
+  }
+}
+
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #101010;
+  --text-color: white;
+  --main-color: #03e9f4;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 4rem 15%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+#menu-icon {
+  font-size: 3.5rem;
+  color: var(--main-color);
+  display: none;
+}
+#switch-icon {
+  font-size: 3.5rem;
+  color: var(--main-color);
+  display: none;
+}
+.logo {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+span {
+  background: linear-gradient(
+    270deg,
+    #03e9f4 20%,
+    #032bb4 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.navbar a {
+  font-size: 1.8rem;
+  background-color:none;
+  color: var(--main-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+  padding: 1rem;
+}
+
+.navbar a:hover {
+  background-color: var(--main-color);
+  color: black;
+  border-radius: 3rem;
+}
+ .dropdown {
+            position: flex;
+            display: center;
+        }
+.dropbtn {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    padding: 1rem; /* Ensure consistent padding */
+    background: none; /* Remove background for button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.dropbtn {
+    padding: 1rem; /* Adjust padding if needed */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 160px;
+    z-index: 1;
+}
+        .dropdown-content a {
+            color: var(--main-color);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .show {
+            display: block;
+        }
+.logout-button {
+    background-color: var(--main-color); /* Red background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    align-self: center;
+}
+
+.logout-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 15%;
+  font-size:20px;
+  background-color: var(--second-bg-color);
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+.image-container {
+    position: relative;
+    width: 100%; /* Ensure it takes the full width */
+}
+.pdf-button {
+
+            background-color: #03e9f4; /* Button color */
+
+            color: white; /* Text color */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Ensure it behaves like a button */
+            transition: background-color 0.3s;
+        }
+        .pdf-button:hover {
+            background-color: #02a3c5; /* Darker shade on hover */
+}
+.image-container img {
+    width: 100%; /* Adjust to full width of the container */
+    height: 500px; /* Set your desired height */
+    display: block; /* Removes bottom space in inline images */
+    margin: 0 auto; /* Centers the image */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    font-size: 6rem; /* Adjust size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
+    text-align: center; /* Center the text */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word; /* Break long words onto the next line */
+  overflow: hidden; /* Hide overflow content */
+  white-space: normal; /* Allow text to wrap */
+  border: 2px solid white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  th, td {
+    display: block; /* Stack cells vertically on smaller screens */
+    width: 100%; /* Take full width */
+  }
+  
+  tr {
+    display: block; /* Stack rows vertically */
+    margin-bottom: 1rem; /* Add space between rows */
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+
+.Framework{
+  background-color: var(--second-bg-color);
+}
+.Framework h3{
+  font-size: 3rem;
+}
+.Framework b{
+  font-size: 2.8rem;
+}
+.Framework p{
+  font-size: 2.6rem;
+}
+.projects2 {
+  background-color: var(--second-bg-color);
+  min-height: 100px;
+}
+.projects {
+  background-color: var(--second-bg-color);
+}
+
+.projects-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  row-gap: 5rem;
+}
+.projects-box2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  row-gap: 5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 3rem;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--main-color);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color);
+  transform: scale(1.02);            
+}
+.project-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.project-card h3 {
+  font-size: 3rem;
+}
+
+.project-card p {
+  font-size: 1.6rem;
+}
+.project-card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 3rem;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--main-color);
+  transition: 0.3s ease;
+}
+
+.project-card2:hover {
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color);
+  transform: scale(1.02);            
+}
+.project-card2 img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  border-radius: ;
+  object-fit: cover;
+}
+.project-card2 h3 {
+  font-size: 3rem;
+}
+
+.project-card2 p {
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .projects-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .projects-box2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-box2 {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: none;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pdf-button {
+  display: block;
+  margin-top: 10px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid-item2 {
+  background-color: none;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pdf-button {
+  display: block;
+  margin-top: 10px;
+}
+
+.footer{
+  background-color: var(--second-bg-color);
+  padding: 50px 0;
+}
+.footer .social-icons{
+  text-align: center;
+}
+.footer .copyright{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+@media(max-width:1285px){
+  #menu-icon{
+    display: block;
+  }
+@media(max-width:1285px){
+  #switch-icon{
+    display: block;
+  }
+.navbar{
+  position: absolute;
+  top: 100px;
+  right:0%;
+  width: 50%;
+  padding: 1rem 3rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 2rem;
+  border-left: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  display: none;
+}
+.navbar a{
+  display: block;
+  font-size: 2rem;
+  margin: 3rem 0;
+  color: var(--text-color);
+}
+.navbar.active{
+  display: block;
+}
+.gradient-btn{
+  display: none;
+}
+.home{
+  -ms-flex-direction: column-reverse;
+  margin: 5rem 0;
+  gap: 5rem;
+}
+.home-content{
+  align-items: center;
+  text-align: center;
+}
+.home-img img{
+   width: 56vw;
+}
+.about{
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.about h2{
+  text-align: center;
+  margin: 2rem 0;
+}
+.about img{
+  width: 52vw;
+}
+
+.contact form{
+  flex-direction: column;
+}
+
+}

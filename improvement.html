@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header"> 
+      <a href="index.html" class="logo">EM<span>S</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="decide.html">DECIDE Framework</a>
+        <a href="result.html">Evaluation Results</a>
+        <a href="improvement.html">Proposed Improvement</a>
+          <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">More ▼</button>
+        <div class="dropdown-content" id="myDropdown">
+<button class="logout-button" onclick="exitApp()"><i class='bx bx-log-out'></i> Logout</button>
+        </div>
+    </div>
+      </nav>
+      
+    </header>
+
+    </section>
+<div class="image-container">
+    <img src="img.jpg" alt="Alt text" />
+<div class="overlay">Proposed Improvements</div>
+</div>
+    <section>
+<h3>Proposed UI Improvements</h3>
+<br>
+<br>
+<h4>1. Responsive Design</h4>
+  <p> Improvement: Ensure the navbar and other key elements are operational on all screen sizes.</p>
+   <p>Justification: Visibility of System Status - Users should always be informed about their actions. A responsive design ensures that the navigation remains accessible, allowing users to interact with the system seamlessly on mobile devices.</p>
+<br>
+<h4>2. Consistent Button Colors and Labels</h4>
+   <p>Improvement: Standardize button colors and labels (e.g., "Edit" and "Delete" buttons).</p>
+   <p>Justification: Consistency and Standards - Using consistent visual treatments and clear labels helps users understand functions easily, reducing confusion when interacting with similar-looking buttons.</p>
+<br>
+<h4>3. Enhanced Search Functionality</h4>
+   <p>Improvement: Implement advanced filtering options in search fields.</p>
+   <p>Justification: Match Between System and the Real World - Providing contextual help and advanced filters enhances usability, making it easier for users to find specific entries without needing to remember exact terms.</p>
+<br>
+<h4>4. Confirmation Dialogs for Deletions</h4>
+   <p>Improvement: Add confirmation dialogs before deleting entries.</p>
+   <p>Justification: Error Prevention - This prevents accidental deletions and ensures that users have a chance to reconsider their actions, minimizing the likelihood of errors.</p>
+<br>
+<h4>5. In-Context Help and Tooltips</h4>
+   <p>Improvement: Introduce tooltips for form fields (e.g., when adding an employee).</p>
+  <p>Justification: Recognition Rather Than Recall - By providing in-context help, users can easily access information about what is required in each field, reducing cognitive load and improving accuracy.</p>
+<br>
+<h4>6. Error Messages in Plain Language</h4>
+  <p> Improvement: Rewrite error messages to be more user-friendly.</p>
+   <p>Justification: Help Users Recognize, Diagnose, and Recover from Errors - Clear, plain-language error messages guide users in resolving issues without confusion, enhancing the overall user experience.</p>
+<br>
+<h4>7. Improved Visual Hierarchy</h4>
+  <p>Improvement: Use larger font sizes and better spacing for key elements.</p>
+   <p>Justification: Aesthetic and Minimalist Design - A clear visual hierarchy helps users focus on essential information, making navigation easier and reducing visual clutter.</p>
+<br>
+<h4>8. Customization Options for Frequent Actions</h4>
+   <p>Improvement: Allow users to customize their dashboard or frequently used actions.</p>
+   <p>Justification: Flexibility and Efficiency of Use - Customization caters to individual user preferences and improves overall efficiency, making the system more user-friendly.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/MrSlime22" target="_blank">
+            <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.facebook.com/elardo.rolando1819" target="_blank">
+            <i class="bx bxl-facebook"></i>
+        </a>
+        <a target="">
+            <i class="bx bxl-instagram-alt"></i>
+        </a> 
+        <a target="">
+            <i class="bx bxl-twitter"></i>
+        </a>
+    </div>
+
+      <p class="copyright">© Employee Management System Evaluator | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
